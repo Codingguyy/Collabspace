@@ -1,5 +1,4 @@
 import React from 'react'
-import Sidebarcomponent from '@/components/sidebar'
 import { SidebarProvider } from '@/components/ui/sidebar'
 import { SidebarTrigger } from '@/components/ui/sidebar'
 import Colabnavigate from '@/components/colabnavigate'
