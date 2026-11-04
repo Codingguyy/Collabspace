@@ -99,8 +99,8 @@ export default function Register(){
             </Field>
             <Button variant={"outline"} className="text-primary w-[137px]" style={{fontFamily:"'Roboto-mono',monospace"}} onClick={(e)=>{e.stopPropagation();handleregister()}}>Verify</Button>
             <Field orientation={"horizontal"}>
-                <FieldLabel htmlFor="Donthaveanaccount" style={{fontFamily:"'Roboto-mono',monospace"}}>Don't have an account?</FieldLabel>
-                <Button id="Donthaveanaccount" variant={"outline"} className="text-primary w-[107px] md:w-[167px]" style={{fontFamily:"'Roboto-mono',monospace"}}>Register <ArrowBigRight size={17} color="black"/></Button>
+                <FieldLabel htmlFor="Donthaveanaccount" style={{fontFamily:"'Roboto-mono',monospace"}}>Already have an account?</FieldLabel>
+                <Button id="Donthaveanaccount" variant={"outline"} className="text-primary w-[107px] md:w-[167px]" style={{fontFamily:"'Roboto-mono',monospace"}}>Login<ArrowBigRight size={17} color="black"/></Button>
             </Field>
             </Card>)
 }
