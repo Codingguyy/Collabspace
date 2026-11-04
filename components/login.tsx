@@ -64,6 +64,9 @@ export default function Login(){
            }
         }
     }
+    function handlenavigate(){
+        router.push("/register")
+    }
     React.useEffect(()=>{
         on("login/register",(data)=>{
             if(data){
@@ -87,7 +90,7 @@ export default function Login(){
             <Button variant={"outline"} className="text-primary w-[137px]" style={{fontFamily:"'Roboto-mono',monospace"}} onClick={(e)=>{e.stopPropagation();handleverify()}}>Verify</Button>
             <Field orientation={"horizontal"}>
                 <FieldLabel htmlFor="Donthaveanaccount" style={{fontFamily:"'Roboto-mono',monospace"}}>Don't have an account?</FieldLabel>
-                <Button id="Donthaveanaccount" variant={"outline"} className="text-primary w-[107px] md:w-[167px]" style={{fontFamily:"'Roboto-mono',monospace"}}>Register <ArrowBigRight size={17} color="black"/></Button>
+                <Button id="Donthaveanaccount" variant={"outline"} className="text-primary w-[107px] md:w-[167px]" style={{fontFamily:"'Roboto-mono',monospace"}} onClick={(e)=>{e.stopPropagation();handlenavigate()}}>Register <ArrowBigRight size={17} color="black"/></Button>
             </Field>
             </Card>)
 }
