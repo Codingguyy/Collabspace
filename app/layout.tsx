@@ -3,7 +3,6 @@ import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "@/app/styles/globals.css"
 import { ReactNode } from "react";
 import { Toaster } from "react-hot-toast";
-import Floatingnavbar from "@/components/floatingnavbar";
 import { SidebarTrigger } from "@/components/ui/sidebar";
 import { SidebarProvider } from "@/components/ui/sidebar";
 const inter = Inter({subsets:['latin'],variable:'--font-sans'});
